@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
   text-align: center;
 }
 
@@ -33,10 +32,15 @@
   }
 }
 
-.card {
-  padding: 2em;
+.rotate {
+  animation: rotation 5s infinite linear;
 }
 
-.read-the-docs {
-  color: #888;
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
 }
