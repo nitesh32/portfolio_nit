@@ -5,7 +5,7 @@ import round from "../assets/images/round-text.png";
 function Home() {
   return (
     <div className="h-auto w-full flex flex-col items-start ">
-      <h4 className="border px-5 py-2 mb-14 xl:mt-12 w-36 font-light text-xs rounded-full border-[#565656] flex items-center justify-center">
+      <h4 className="border px-5 py-2 mb-14 xl:mt-12  w-36 font-light text-xs rounded-full border-[#565656] flex items-center justify-center">
         <i className="fa-solid fa-house"></i>&nbsp; About Me
       </h4>
       <h1 className="table flex-col items-start justify-center text-left">
