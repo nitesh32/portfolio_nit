@@ -27,7 +27,7 @@ function Mail(props) {
     
   
     return (
-      <form ref={form} onSubmit={sendEmail} className={`${props.display} text-white fixed top-1/2 left-1/2 ransform -translate-x-1/2 -translate-y-1/2  border border-[#565656] rounded-2xl h-auto w-auto bg-[#1f1f1f] flex flex-col items-center justify-center p-5`} >
+      <form ref={form} onSubmit={sendEmail} className={`${props.display} text-white fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  border border-[#565656] rounded-2xl h-auto w-auto bg-[#1f1f1f] flex flex-col items-center justify-center p-5`} >
         <h1>Let's Discuss</h1>
         <label className={`m-2`}>Name</label>
         <input type="text" name="user_name" className={`w-60 h-14 bg-[#565656] rounded-full border border-[#565656] hover:border-[#28e98c] outline-none focus:border-[#28e98c] p-2 font-bold tracking-wider cursor-pointer`}/>

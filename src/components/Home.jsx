@@ -8,8 +8,8 @@ function Home() {
       <h4 className="border px-5 py-2 mb-14 xl:mt-12 w-36 font-light text-xs rounded-full border-[#565656] flex items-center justify-center">
         <i className="fa-solid fa-house"></i>&nbsp; About Me
       </h4>
-      <h1 className="flex flex-col items-start justify-center text-left">
-        Hi There, I'm&nbsp;{" "}
+      <h1 className="table flex-col items-start justify-center text-left">
+        Hi There, I'm&nbsp;
         <span className="text-[#28e98c] text-light">Nitesh Sharma</span>
       </h1>
       <h1
@@ -18,7 +18,7 @@ function Home() {
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1000"
-        className="flex items-start justify-center lg:text-5xl text-lg flex-col pb-11"
+        className="table items-start justify-center lg:text-5xl text-lg flex-col pb-11"
       >
         I Am Into&nbsp;
         <span className="text-[#28e98c] ">
