@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './Home'
 import Resume from './Resume'
 import Specializations from './Specializations'
+import Skills from './Skills'
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
       <Home/>
       <Resume/>
       <Specializations/>
+      <Skills/>
 
 
 

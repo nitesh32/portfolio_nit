@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Specializations() {
   const [active, setactive] = useState(0);
   return (
-    <div className=" min-h-full" >
+    <div className="min-h-full" >
       <h4 className="border px-5 py-2 mb-14 xl:mt-12 w-40 font-light text-xs rounded-full border-[#565656] flex items-center justify-center mt-14">
         <i className="fa-solid fa-chart-simple"></i>&nbsp; Specializations
       </h4>
