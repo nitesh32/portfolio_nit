@@ -28,8 +28,8 @@ function Skills() {
         >
           <div
             className={`h-5/6 border rounded-t-3xl border-[${
-              active == 2 ? "#28e98c" : "#535353"
-            }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
+                active == 2 ? "#28e98c" : "#565656"
+              }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
           >
             <img src={Reacts} alt="" className="h-14 w-14" />
             <h1 className="text-2xl text-[#28e98c]">80%</h1>
@@ -44,8 +44,8 @@ function Skills() {
         >
           <div
             className={`h-5/6 border rounded-t-3xl border-[${
-              active == 3 ? "#28e98c" : "#535353"
-            }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
+                active == 3 ? "#28e98c" : "#565656"
+              }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
           >
             <img src={Tailwinds} alt="" className="h-14 w-14" />
             <h1 className="text-2xl text-[#28e98c]">85%</h1>
@@ -60,8 +60,8 @@ function Skills() {
         >
           <div
             className={`h-5/6 border rounded-t-3xl border-[${
-              active == 4 ? "#28e98c" : "#535353"
-            }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
+                active == 4 ? "#28e98c" : "#565656"
+              }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
           >
             <img src={Node} alt="" className="h-14 w-14" />
             <h1 className="text-2xl text-[#28e98c]">60%</h1>
@@ -76,8 +76,8 @@ function Skills() {
         >
           <div
             className={`h-5/6 border rounded-t-3xl border-[${
-              active == 5 ? "#28e98c" : "#535353"
-            }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
+                active == 5 ? "#28e98c" : "#565656"
+              }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
           >
             <img src={Mongo} alt="" className="h-14 w-14" />
             <h1 className="text-2xl text-[#28e98c]">85%</h1>
@@ -92,8 +92,8 @@ function Skills() {
         >
           <div
             className={`h-5/6 border rounded-t-3xl border-[${
-              active == 6 ? "#28e98c" : "#535353"
-            }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
+                active == 6 ? "#28e98c" : "#565656"
+              }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
           >
             <img src={Github} alt="" className="h-14 w-14" />
             <h1 className="text-2xl text-[#28e98c]">80%</h1>
