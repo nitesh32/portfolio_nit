@@ -18,7 +18,6 @@ function Layout() {
     }
 
   }
-
   
   return (
     <StateContext.Provider value={{hello}} >

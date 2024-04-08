@@ -18,7 +18,7 @@ function Side_bar() {
       <img
         src={profile}
         alt="img"
-        className="h-56 w-60 grayscale  m-auto mb-11 rounded-3xl object-cover opacity-75 brightness-125"
+        className="h-56 w-60 grayscale   m-auto mb-11 rounded-3xl object-cover opacity-75 brightness-125"
       />
       <h2 className="text-2xl font-light font-sans mb-3 leading-5">
         nit8339@gmail.com

@@ -8,8 +8,6 @@ function Mail(props) {
 
     const sendEmail = (e) => {
       e.preventDefault();
-      
-  
       emailjs
         .sendForm('service_p3ufly7', 'template_v5n7toy', form.current, {
           publicKey: 'opj5nbwlxPcm7XCan',
@@ -24,8 +22,6 @@ function Mail(props) {
         );
     };
 
-    
-  
     return (
       <form ref={form} onSubmit={sendEmail} className={`${props.display} text-white fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  border border-[#565656] rounded-2xl h-auto w-auto bg-[#1f1f1f] flex flex-col items-center justify-center p-5`} >
         <h1>Let's Discuss</h1>

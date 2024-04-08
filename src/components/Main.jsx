@@ -3,6 +3,8 @@ import Home from './Home'
 import Resume from './Resume'
 import Specializations from './Specializations'
 import Skills from './Skills'
+import Projects from './Projects'
+import Contact from './Contact'
 
 function Main() {
   return (
@@ -11,6 +13,8 @@ function Main() {
       <Resume/>
       <Specializations/>
       <Skills/>
+      <Projects/>
+      <Contact/>
 
 
 

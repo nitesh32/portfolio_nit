@@ -5,15 +5,31 @@ import Tailwinds from "../assets/images/Tailwinds.webp";
 import Node from "../assets/images/Node.webp";
 import Mongo from "../assets/images/Mongo.webp";
 import Github from "../assets/images/Github.webp";
+import cpp from "../assets/images/cpp.webp";
+import Framer from "../assets/images/Framer.webp";
+import { motion } from "framer-motion";
+
 
 function Skills() {
   const [active, setactive] = useState(0);
 
   return (
     <div className="min-h-full">
-      <h4 className="border px-5 py-2 mb-14 xl:mt-12 w-24 font-light text-xs rounded-full border-[#565656] flex items-center justify-center mt-14">
+      <motion.h4 className="border px-5 py-2 mb-14 xl:mt-12 w-24 font-light text-xs rounded-full border-[#565656] flex items-center justify-center mt-14"
+      initial={{
+        opacity: 0,
+        y: 50,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 1,
+        },
+      }}
+      viewport={{ once: false }}>
         <i className="fa-solid fa-laptop-code"></i>&nbsp; Skills
-      </h4>
+      </motion.h4>
       <h1 className="table md:flex-col flex-row items-start justify-center text-left mb-12">
         My <span className="text-[#28e98c] text-light ">Skills</span>
       </h1>
@@ -103,6 +119,38 @@ function Skills() {
 
         <div
           className="h-64 mb-12 font-bold"
+          onMouseEnter={() => setactive(7)}
+          onMouseLeave={() => setactive(0)}
+        >
+          <div
+            className={`h-5/6 border rounded-t-3xl border-[${
+                active ==7 ? "#28e98c" : "#565656"
+              }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
+          >
+            <img src={cpp} alt="" className="h-14 w-14" />
+            <h1 className="text-2xl text-[#28e98c]">90%</h1>
+          </div>
+          <span className="">C++</span>
+        </div>
+
+        <div
+          className="h-64 mb-12 font-bold"
+          onMouseEnter={() => setactive(8)}
+          onMouseLeave={() => setactive(0)}
+        >
+          <div
+            className={`h-5/6 border rounded-t-3xl border-[${
+                active ==8 ? "#28e98c" : "#565656"
+              }] ease-in-out duration-300 rounded-b-3xl mb-5 flex flex-col items-center justify-around overflow-hidden p-8`}
+          >
+            <img src={Framer} alt="" className="h-14 w-14" />
+            <h1 className="text-2xl text-[#28e98c]">60%</h1>
+          </div>
+          <span className="">Framer Motion</span>
+        </div>
+
+        <div
+          className="h-64 mb-12 font-bold"
           onMouseEnter={() => setactive(1)}
           onMouseLeave={() => setactive(0)}
         >
@@ -116,6 +164,7 @@ function Skills() {
           </div>
           <span className="">Figma</span>
         </div>
+        
       </div>
     </div>
   );

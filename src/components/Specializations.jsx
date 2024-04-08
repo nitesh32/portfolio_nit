@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 function Specializations() {
   const [active, setactive] = useState(0);
@@ -13,22 +14,26 @@ function Specializations() {
       <div
         className={`grid xl:grid-cols-1 lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 h-auto xl:w-4/5 w-full`}
       >
-        <div
+        <motion.div
           onMouseEnter={() => setactive(1)}
           onMouseLeave={() => setactive(0)}
+          
           className={` min-h-52 w-full border border-[${
             active == 1 ? "#28e98c" : "#565656"
           }] rounded-2xl p-6 text-left ease-in-out duration-300`}
+
+          
         >
-          <div className="text-2xl leading-loose">Frontend Development</div>
+          <div className="text-2xl leading-loose"
+          >Frontend Development</div>
           <div className="text-base text-[#999999] mb-4">
            I am proficient in modern framework such as React. Skilled in responsive design, state management for dynamic and interactive web applications.
           </div>
           <div className={`${active == 1 ? "underline" : ""} `}>5+ Projects</div>
           <i></i>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
           onMouseEnter={() => setactive(2)}
           onMouseLeave={() => setactive(0)}
           className={` min-h-52 w-full border border-[${
@@ -41,7 +46,7 @@ function Specializations() {
           </div>
           <div className={`${active == 2 ? "underline" : ""} `}>2 Projects</div>
           <i></i>
-        </div>
+        </motion.div>
 
         <div
           onMouseEnter={() => setactive(3)}
