@@ -1,6 +1,11 @@
 import React, { useRef,useContext } from 'react';
 import emailjs from '@emailjs/browser';
 import {StateContext} from "./Layout";
+import {Resend} from "resend";
+
+// const api = import.meta.env.RESEND_API_KEY;
+const resend = new Resend('re_GbFKFz65_88RWYiTf54TmweXM7dvZEKNY');
+
 
 function Mail(props) {
     const form = useRef();
@@ -8,18 +13,24 @@ function Mail(props) {
 
     const sendEmail = (e) => {
       e.preventDefault();
-      emailjs
-        .sendForm('service_p3ufly7', 'template_v5n7toy', form.current, {
-          publicKey: 'opj5nbwlxPcm7XCan',
-        })
-        .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
+      resend.emails.send({
+        from: 'Acme <onboarding@resend.dev>',
+        to: ['nit8339@gmail.com'],
+        subject: 'Hello world',
+        text:"rgbhtygdrfghtfgdgfhg"
+      });
+      // emailjs
+      //   // .sendForm('service_p3ufly7', 'template_v5n7toy', form.current, {
+      //   //   publicKey: 'opj5nbwlxPcm7XCan',
+      //   // })
+      //   .then(
+      //     () => {
+      //       console.log('SUCCESS!');
+      //     },
+      //     (error) => {
+      //       console.log('FAILED...', error.text);
+      //     },
+      //   );
     };
 
     return (
