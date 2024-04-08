@@ -7,13 +7,12 @@ import {StateContext} from "./Layout";
 function Mail(props) {
     const form = useRef();
     const {hello} = useContext(StateContext);
-
     const sendEmail = (e) => {
       e.preventDefault();
       emailjs
-        // .sendForm('service_p3ufly7', 'template_v5n7toy', form.current, {
-        //   publicKey: 'opj5nbwlxPcm7XCan',
-        // })
+        .sendForm('service_p3ufly7', 'template_v5n7toy', form.current, {
+          publicKey: 'opj5nbwlxPcm7XCan',
+        })
         .then(
           () => {
             console.log('SUCCESS!');
