@@ -18,7 +18,7 @@ function Projects() {
         My <span className="text-[#28e98c] text-light ">Projects</span>
       </h1>
       <div
-        className={`h-auto xl:w-4/5 w-full  md:grid-cols-2 grid grid-cols-1 gap-14 overflow-hidden`}
+        className={`h-auto xl:w-4/5 w-full  md:grid-cols-2 grid grid-cols-1 gap-14 overflow-hidden mb-24`}
       >
         <div
           className={`max-h-96  `}
