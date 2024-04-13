@@ -1,10 +1,11 @@
-import React, { useState,useContext} from "react";
+import React, { useState, useContext } from "react";
 import logo from "../assets/images/logo.webp";
 import profile from "../assets/images/profile.webp";
-import {StateContext} from "./Layout";
+import { StateContext } from "./Layout";
+import { motion } from "framer-motion";
 
 function Side_bar() {
-  const {hello} = useContext(StateContext);
+  const { hello } = useContext(StateContext);
   return (
     <div className="border-[#565656] border h-auto  xl:w-4/5 w-full rounded-3xl p-7 flex flex-col items-center">
       <div className="h-10 w-full flex flex-row items-end justify-between mb-7">
@@ -31,39 +32,51 @@ function Side_bar() {
 
       <ul className="h-12 w-full flex gap-2 items-center justify-center mb-8">
         <li className="h-12 w-12 border-2 border-[#999999]  rounded-full flex items-center justify-center hover:border-[#28e98c] ease-in-out duration-300">
-          <a href="" className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300">
+          <a
+            href="https://github.com/nitesh32"
+            target="_blank"
+            className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300"
+          >
             <i className="fa-brands fa-github fa-xl "></i>
           </a>
         </li>
         <li className="h-12 w-12 border-2 border-[#999999]  rounded-full flex items-center justify-center hover:border-[#28e98c] ease-in-out duration-300">
-          <a href="" className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300">
-          <i className="fa-brands fa-twitter fa-xl"></i>
+          <a
+            href="https://twitter.com/NiteshS1123"
+            target="_blank"
+            className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300"
+          >
+            <i className="fa-brands fa-twitter fa-xl"></i>
           </a>
         </li>
         <li className="h-12 w-12 border-2 border-[#999999]  rounded-full flex items-center justify-center hover:border-[#28e98c] ease-in-out duration-300">
-          <a href="" className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300">
-          <i className="fa-brands fa-linkedin fa-xl"></i>
+          <a
+            href="https://www.linkedin.com/in/nitesh-sharma-3429541bb/"
+            target="_blank"
+            className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300"
+          >
+            <i className="fa-brands fa-linkedin fa-xl"></i>
           </a>
         </li>
         <li className="h-12 w-12 border-2 border-[#999999]  rounded-full flex items-center justify-center hover:border-[#28e98c] ease-in-out duration-300">
-          <a href="" className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300">
-          <i className="fa-brands fa-instagram fa-xl"></i>
+          <a
+            href="https://www.instagram.com/solo_nitesh/"
+            target="_blank"
+            className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300"
+          >
+            <i className="fa-brands fa-instagram fa-xl"></i>
           </a>
         </li>
       </ul>
 
       <div className="h-14 w-full flex items-center justify-center cursor-pointer">
-      <a  onClick={hello} className="h-full w-full border-2 border-[#28e98c] bg-[#28e98c] rounded-full px-auto text-black hover:text-[#28e98c] hover:bg-black flex items-center justify-center ease-in-out duration-300">
-        <i className="fa-solid fa-envelope fa-xl"></i>&nbsp;
-        HIRE ME!
-      </a>
+        <motion.a
+          onClick={hello}
+          className="h-full w-full border-2 border-[#28e98c] bg-[#28e98c] rounded-full px-auto text-black hover:text-[#28e98c] hover:bg-black flex items-center justify-center ease-in-out duration-300"
+        >
+          <i className="fa-solid fa-envelope fa-xl"></i>&nbsp; HIRE ME!
+        </motion.a>
       </div>
-      
-      
-
-
-
-
     </div>
   );
 }

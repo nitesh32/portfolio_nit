@@ -1,9 +1,22 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import round from "../assets/images/round-text.png";
-import { motion } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  MotionValue
+} from "framer-motion";
 
 function Home() {
+  const gotoproj=(val)=>{
+    console.log("eefrgthyjk");
+    const element = document.getElementById(val);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   return (
     <motion.div
       className="h-auto w-full flex flex-col items-start "
@@ -126,9 +139,9 @@ function Home() {
             Problems Solved on Codeforces.
           </span>
         </motion.div>
-        <motion.a
-          href=""
-          className="h-44 w-44 border border-[#575757] rounded-full flex items-center justify-center  duration-0 relative"
+        <motion.div
+          onClick={()=>gotoproj("projects")}
+          className="h-44 w-44 border border-[#575757] rounded-full flex items-center justify-center  duration-0 relative cursor-pointer"
           initial={{
             opacity: 0,
             y: 50,
@@ -144,7 +157,7 @@ function Home() {
         >
           <img src={round} alt="" className="rotate" />
           <i className="fa-solid fa-down-long fa-2xl absolute text-white animate-pulse"></i>
-        </motion.a>
+        </motion.div>
       </div>
     </motion.div>
   );
