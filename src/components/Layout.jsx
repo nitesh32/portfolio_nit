@@ -4,7 +4,7 @@ import Main from './Main'
 import Mail from "./Mail";
 export const StateContext = createContext();
 
-function Layout() {
+function Layout(props) {
   const [dis,setdis] = useState("hidden");
   const [oplayout,setoplayout] = useState("blur-none");
   const hello = () => {
@@ -18,11 +18,12 @@ function Layout() {
     }
 
   }
+  console.log(props.fl);
   
   return (
     <StateContext.Provider value={{hello}} >
     <div
-    className={`bg-[#1f1f1f] text-black h-auto w-screen grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-5  lg:px-20 xl:px-5 font-poppins scroll-smooth select-none`}
+    className={`bg-[#1f1f1f] text-black h-auto w-screen ${props.fl?"hidden":"grid"} sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-5  lg:px-20 xl:px-5 font-poppins scroll-smooth select-none`}
     
     >
         <div onClick={()=>cancelmailer()} className={`bg-[#1f1f1f] w-full flex px-5 justify-items-stretch items-center  text-white h-auto mt-4 ${oplayout}`} >

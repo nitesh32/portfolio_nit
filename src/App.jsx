@@ -50,9 +50,7 @@ function myStopFunction() {
 
   return (
     <>
-    {preloader ? (
-    <motion.div className="bg-#1f1f1f text-white w-screen h-screen flex items-center justify-center p-0 m-0"
-    >
+    <motion.div className={`bg-#1f1f1f text-white  w-screen h-screen ${preloader?"flex":"hidden"} items-center justify-center p-0 m-0`} >
        <motion.span
       style={ballStyle}
       transition={{
@@ -66,8 +64,7 @@ function myStopFunction() {
       }}
     />
     </motion.div>
-    ):
-    (<Layout/>)}
+    <Layout fl={preloader} />
       
 
 
