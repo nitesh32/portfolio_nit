@@ -1,16 +1,34 @@
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+
 
 function Resume() {
   const [active, setactive] = useState(0);
   return (
     <div>
-      <h4 className="border px-5 py-2 mb-14 xl:mt-12 w-36 font-light text-xs rounded-full border-[#565656] flex items-center justify-center mt-14">
+      <motion.h4 whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          initial={{ y: "20%", opacity: 0, scale: 0.5 }}
+          transition={{
+            duration: 0.5,
+            type: "spring",
+            stiffness: 100,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          }} className="border px-5 py-2 mb-14 xl:mt-12 w-36 font-light text-xs rounded-full border-[#565656] flex items-center justify-center mt-14">
         <i className="fa-solid fa-suitcase"></i>&nbsp; Resume
-      </h4>
-      <h1 className="table flex-col items-start justify-center text-left mb-12">
+      </motion.h4>
+      <motion.h1 whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          initial={{ y: "20%", opacity: 0, scale: 0.5 }}
+          transition={{
+            duration: 0.5,
+            type: "spring",
+            stiffness: 100,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          }} className="table flex-col items-start justify-center text-left mb-12">
         Education &{" "}
         <span className="text-[#28e98c] text-light ">Experience</span>
-      </h1>
+      </motion.h1>
 
       <div
         onMouseEnter={() => setactive(1)}
