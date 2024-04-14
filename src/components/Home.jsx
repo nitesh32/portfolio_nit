@@ -67,7 +67,7 @@ function Home() {
           duration: 0.5,
           ease: "easeInOut",
         }} className="text-[#999999] mb-8 text-start w-4/5" >
-        I'm a Full-Stack developer based in Chandigarh, Haryana.A Computer
+        I'm a Full-Stack developer based in Chandigarh, Haryana. A Computer
         Science Engineering graduate from Chandigarh University.
       </motion.p>
       <div className="flex flex-row flex-wrap justify-start items-center gap-4">

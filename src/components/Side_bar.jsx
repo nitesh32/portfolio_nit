@@ -25,7 +25,7 @@ function Side_bar() {
         nit8339@gmail.com
       </h2>
       <h2 className="text-2xl font-light font-sans leading-5 mb-7">
-        Bhiwani in Hariyana, India
+        Bhiwani in Haryana, India
       </h2>
 
       <p className="mb-6 text-[#999999] ">Competitive Programmer</p>
