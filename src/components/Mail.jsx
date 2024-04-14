@@ -14,6 +14,9 @@ function Mail(props) {
       })
       .then(
         () => {
+          e.target.user_name.value="";
+          e.target.user_email.value="";
+          e.target.message.value="";
           console.log("SUCCESS!");
         },
         (error) => {
