@@ -11,13 +11,10 @@ function Projects() {
   return (
     <div className="min-h-full" id="projects">
       <motion.h4
-      whileInView={{ y: 0, opacity: 1, scale: 1 }}
-      initial={{ y: "20%", opacity: 0, scale: 0.5 }}
+      whileInView={{ y: 0, opacity: 1,  }}
+      initial={{ y: "50%", opacity: 0, }}
       transition={{
         duration: 0.5,
-        type: "spring",
-        stiffness: 100,
-        repeatType: "reverse",
         ease: "easeInOut",
       }}
         className="border px-5 py-2 mb-14 xl:mt-12 w-28
@@ -25,28 +22,22 @@ function Projects() {
       >
         <i className="fa-solid fa-laptop-code"></i>&nbsp; Projects
       </motion.h4>
-      <motion.h1 whileInView={{ y: 0, opacity: 1, scale: 1 }}
-          initial={{ y: "20%", opacity: 0, scale: 0.5 }}
-          transition={{
-            duration: 0.5,
-            type: "spring",
-            stiffness: 100,
-            repeatType: "reverse",
-            ease: "easeInOut",
-          }} className="table md:flex-col flex-row items-start justify-center text-left mb-12">
+      <motion.h1 whileInView={{ y: 0, opacity: 1,  }}
+        initial={{ y: "50%", opacity: 0, }}
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+        }} className="table md:flex-col flex-row items-start justify-center text-left mb-12">
         My <span className="text-[#28e98c] text-light ">Projects</span>
       </motion.h1>
       <div
         className={`h-auto xl:w-4/5 w-full  md:grid-cols-2 grid grid-cols-1 gap-14 overflow-hidden mb-24`}
       >
         <motion.div
-        whileInView={{ y: 0, opacity: 1, scale: 1 }}
-        initial={{ y: "20%", opacity: 0, scale: 0.5 }}
+        whileInView={{ y: 0, opacity: 1, scale:1 }}
+        initial={{ y: "50%", opacity: 0,scale:0.5 }}
         transition={{
           duration: 0.5,
-          type: "spring",
-          stiffness: 100,
-          repeatType: "reverse",
           ease: "easeInOut",
         }}
           className={`max-h-96  `}
@@ -97,13 +88,10 @@ function Projects() {
         </motion.div>
 
         <motion.div
-        whileInView={{ y: 0, opacity: 1, scale: 1 }}
-        initial={{ y: "20%", opacity: 0, scale: 0.5 }}
+        whileInView={{ y: 0, opacity: 1,scale: 1 }}
+        initial={{ y: "50%", opacity: 0, scale:0.5 }}
         transition={{
           duration: 0.5,
-          type: "spring",
-          stiffness: 100,
-          repeatType: "reverse",
           ease: "easeInOut",
         }}
           className={`max-h-96  `}
@@ -154,13 +142,10 @@ function Projects() {
         </motion.div>
 
         <motion.div
-        whileInView={{ y: 0, opacity: 1, scale: 1 }}
-        initial={{ y: "20%", opacity: 0, scale: 0.5 }}
+        whileInView={{ y: 0, opacity: 1, scale:1 }}
+        initial={{ y: "50%", opacity: 0,scale:0.5 }}
         transition={{
           duration: 0.5,
-          type: "spring",
-          stiffness: 100,
-          repeatType: "reverse",
           ease: "easeInOut",
         }}
           className={`max-h-96  `}
@@ -211,13 +196,10 @@ function Projects() {
         </motion.div>
 
         <motion.div
-        whileInView={{ y: 0, opacity: 1, scale: 1 }}
-        initial={{ y: "20%", opacity: 0, scale: 0.5 }}
+        whileInView={{ y: 0, opacity: 1, scale:1 }}
+        initial={{ y: "50%", opacity: 0,scale:0.5 }}
         transition={{
           duration: 0.5,
-          type: "spring",
-          stiffness: 100,
-          repeatType: "reverse",
           ease: "easeInOut",
         }}
           className={`max-h-96  `}

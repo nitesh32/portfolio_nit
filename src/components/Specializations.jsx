@@ -8,26 +8,20 @@ function Specializations() {
     <div className="min-h-full">
       <motion.h4
         className="border px-5 py-2 mb-14 xl:mt-12 w-40 font-light text-xs rounded-full border-[#565656] flex items-center justify-center mt-14"
-        whileInView={{ y: 0, opacity: 1, scale: 1 }}
-        initial={{ y: "50%", opacity: 0, scale: 0.5 }}
-        transition={{
-          duration: 0.5,
-          type: "spring",
-          stiffness: 100,
-          repeatType: "reverse",
-          ease: "easeInOut",
-        }}
+        whileInView={{ y: 0, opacity: 1,  }}
+      initial={{ y: "50%", opacity: 0, }}
+      transition={{
+        duration: 0.5,
+        ease: "easeInOut",
+      }}
       >
         <i className="fa-solid fa-chart-simple"></i>&nbsp; Specializations
       </motion.h4>
       <motion.h1
-        whileInView={{ y: 0, opacity: 1, scale: 1 }}
-        initial={{ y: "50%", opacity: 0, scale: 0.5 }}
+        whileInView={{ y: 0, opacity: 1,  }}
+        initial={{ y: "50%", opacity: 0, }}
         transition={{
           duration: 0.5,
-          type: "spring",
-          stiffness: 100,
-          repeatType: "reverse",
           ease: "easeInOut",
         }}
         className="table md:flex-col flex-row items-start justify-center lg:text-6xl text-4xl text-left mb-12"
@@ -40,16 +34,6 @@ function Specializations() {
         <motion.div
           onMouseEnter={() => setactive(1)}
           onMouseLeave={() => setactive(0)}
-          
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
-          initial={{ y: "20%", opacity: 0, scale: 0.5 }}
-          transition={{
-            duration: 0.5,
-            type: "spring",
-            stiffness: 100,
-            repeatType: "reverse",
-            ease: "easeInOut",
-          }}
 
           className={` min-h-52 w-full border border-[${
             active == 1 ? "#28e98c" : "#565656"
