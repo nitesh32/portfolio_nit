@@ -28,7 +28,7 @@ function Resume() {
       whileInView={{ y: 0, opacity: 1,  }}
       initial={{ y: "50%", opacity: 0, }}
       transition={{
-        duration: 0.5,
+        duration: 1,
         ease: "easeInOut",
       }}
         onMouseEnter={() => setactive(1)}
@@ -56,7 +56,7 @@ function Resume() {
       whileInView={{ y: 0, opacity: 1,  }}
       initial={{ y: "50%", opacity: 0, }}
       transition={{
-        duration: 0.5,
+        duration: 1,
         ease: "easeInOut",
       }}
         onMouseEnter={() => setactive(2)}
@@ -85,7 +85,7 @@ function Resume() {
       whileInView={{ y: 0, opacity: 1,  }}
       initial={{ y: "50%", opacity: 0, }}
       transition={{
-        duration: 0.5,
+        duration: 1,
         ease: "easeInOut",
       }}
         onMouseEnter={() => setactive(3)}
