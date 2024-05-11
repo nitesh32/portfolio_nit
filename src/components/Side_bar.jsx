@@ -42,7 +42,7 @@ function Side_bar() {
         </li>
         <li className="h-12 w-12 border-2 border-[#999999]  rounded-full flex items-center justify-center hover:border-[#28e98c] ease-in-out duration-300">
           <a
-            href="https://twitter.com/NiteshS1123"
+            href="https://twitter.com/nitesh_s11"
             target="_blank"
             className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300"
           >
@@ -51,7 +51,7 @@ function Side_bar() {
         </li>
         <li className="h-12 w-12 border-2 border-[#999999]  rounded-full flex items-center justify-center hover:border-[#28e98c] ease-in-out duration-300">
           <a
-            href="https://www.linkedin.com/in/nitesh-sharma-3429541bb/"
+            href="https://www.linkedin.com/in/nitesh32/"
             target="_blank"
             className="w-full h-full flex items-center justify-center text-[#999999] hover:text-[#28e98c] ease-in-out duration-300"
           >
